@@ -12,12 +12,13 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-header {
+.fh{
   background-color: #829eb9;
   text-align: center;
   color: white;
   padding: 10px;
 }
+
 .con {
   display: flex;
   flex: 1;
@@ -41,9 +42,11 @@ header {
   padding-top: 100px;
 }
 
-footer {
-  background-color: #829eb9;
-  text-align: center;
-  color: white;
-  padding: 10px;
+table ,th,td{
+border: 1px solid;
+}
+table{
+width: 80%;
+margin: auto;
+border-collapse: collapse;
 }
