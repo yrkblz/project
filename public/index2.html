@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -25,25 +25,30 @@
           <li><a href="index2.html">Wyceniamy</a></li>
         </ul>
       </section>
-      <section id="m">
-        <h2>Barwy i ich pochodne</h2>
-        <table>
-          <tr>
-            <td colspan="2">Składowe</td>
-            <td class="w">Wynik</td>
-          </tr>
-          <tr>
-            <td>żołty</td>
-            <td>czerwony</td>
-            <td>pomaranczowy</td>
-          </tr>
-          <tr>
-            <td>czerwony</td>
-            <td>niebieski</td>
-            <td>fioletowy</td>
-          </tr>
-        </table>
+      <section class="mid">
+       <form id="form">
+        <h2>Zapotrzebowanie na farbę</h2>
+        
+        <label for="liczba">Powierzchnia malowania (m^2):</label>
+        <input type="text" id="number" />
+        <button type="submit">Policz</button>
+      </form>
+      <div>
+       <p>Liczba potrzebnych puszek: <span id="count"></span></p> 
+      </div> 
       </section>
+      
+      <script>
+        document
+          .getElementById("form")
+          .addEventListener("submit", function (e) {
+            e.preventDefault()
+            var input = document.getElementById("number") ;
+            document
+            .getElementById("count")
+            .innerHTML=input.value 
+          });
+      </script>
       <section id="r">
         <img src="malarz.jpg" alt="Próbki farb" />
       </section>

@@ -50,3 +50,17 @@ width: 80%;
 margin: auto;
 border-collapse: collapse;
 }
+img{
+width: 100%;
+}
+
+.mid{
+display: block;
+  background-color: #e0e9f1;
+  width: 50%;
+  text-align: center;
+  padding-top: 100px;
+}
+#number{
+  width: 100px;
+}
